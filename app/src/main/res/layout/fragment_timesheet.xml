@@ -8,6 +8,8 @@
     android:background="#040C3A"
     tools:context=".ui.timesheet.TimesheetFragment">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -235,9 +237,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Received(3)"
+                android:textColor="@color/white"
                 android:textSize="18sp"
-                android:textStyle="normal"
-                android:textColor="@color/white"/>
+                android:textStyle="normal" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -249,6 +251,193 @@
                 android:textColor="@color/white"/>
 
         </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:background="@drawable/button_color"
+                android:text="Very High priority"
+                android:textAllCaps="false"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="200dp">
+
+                        <ImageView
+                            android:id="@+id/next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ne_xt"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/atta_chment"
+                            android:layout_toStartOf="@+id/next"
+                            android:layout_margin="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toStartOf="@+id/link"
+                            android:src="@drawable/infor_mation" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234567890"
+                        android:textSize="14sp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="230dp"
+                        android:layout_marginTop="40dp"
+                        android:text="in process"
+                        android:textColor="#14E31D"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SHAO-01-/-AB"
+                        android:textSize="18sp"
+                        android:drawableStart="@drawable/loc_ation"
+                        android:layout_marginTop="60dp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="90dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:drawableStart="@drawable/equi_pment"
+                            android:text="1234567890"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:drawableStart="@drawable/func_location"
+                            android:text="NW8 8QN"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="120dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:drawableStart="@drawable/start_date"
+                            android:text="22-01-2022 10:00 Am"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+
+                            android:layout_gravity="center"
+                            android:drawableStart="@drawable/end_date"
+                            android:text="22-01-2022 10:00 Am"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:text="werthgbfvdcsxaswertyyjhngbfvdcsxdertyjhmnbvdcsertyjhnbvcxsxwerth"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+        </FrameLayout>
 
 
     </LinearLayout>
